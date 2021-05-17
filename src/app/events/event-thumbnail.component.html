@@ -1,0 +1,26 @@
+<div [routerLink] = "['/events', eventVal.id]" class="well hoverwell thumbnail">
+  <h2>{{ eventVal?.name }}</h2>
+  <div>Date : {{ eventVal?.date }}</div>
+  <div [ngSwitch]="eventVal?.time">
+    Time : {{ eventVal?.time }}
+    <span *ngSwitchCase="'8:00 am'"> (Early Start)</span>
+    <span *ngSwitchCase="'10:00 am'"> (Late Start)</span>
+    <span *ngSwitchDefault> (Early Start)</span>
+  </div>
+  <div>Price : {{ eventVal?.price }} INR</div>
+
+  <!-- Remove data from the dom itself -->
+  <div *ngIf = eventVal?.location>
+    <span>Location : {{ eventVal?.location?.address }}</span>
+    <span>&nbsp; </span>
+    <span> {{ eventVal?.location?.city }},
+      {{ eventVal?.location?.country }}</span>
+  </div>
+
+  <!-- Just hide the data, not remove it  -->
+  <div [hidden] = !eventVal?.onlinelocation>
+    Online Location : {{eventVal?.onlinelocation}}
+  </div>
+
+  <button class="btn btn-primary" (click) = "handleClick()">Click Me</button>
+</div>

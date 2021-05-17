@@ -1,27 +1,13 @@
-# NgFundamentals
+## Megha Documentation Added
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.12.
+Check out the comments before understanding doubts.
 
-## Development server
+3rd party installation 
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+npm install ngf-bootstrap
+1. Bootstrap ngf is used and its reference is added in angular.json so that the data is available throughout the application.
 
-## Code scaffolding
+import stylesheet and js file after that
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+npm install toastr --save
+2. againn reference will be added for stylesheet and js file in angular.json
